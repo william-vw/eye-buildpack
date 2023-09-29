@@ -7,8 +7,8 @@ echo "       Downloading $tarball"
 curl -s -L $tarball > $name.zip
 tar -xzf $name.zip
 cd eyereasoner*
-mkdir /app/opt
-sed -r 's/prefix=(\/opt\/eye)/prefix=\/app\/opt\/eye/' install.sh > install2.sh
+echo "       build dir: $1"
+sed -r "s/prefix=(\/opt\/eye)/prefix=$1\/opt\/eye/" install.sh > install2.sh
 chmod +x install2.sh
 echo "       Installing $name"
 ./install2.sh
