@@ -11,3 +11,4 @@ sed -r 's/prefix=(\/opt\/eye)/prefix=\/app\/opt\/eye/' install.sh > install2.sh
 chmod +x install2.sh
 echo "       Installing $name"
 ./install2.sh
+eye --version
