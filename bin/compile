@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "echo "-----> Installing eye"
+echo "-----> Installing eye"
 ./eye-4.17.6/install.sh
